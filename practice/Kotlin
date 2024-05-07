@@ -1,0 +1,27 @@
+// 1부터 100까지의 짝수의 합 출력
+var num:Int = 0
+for (i in 1..100) {
+    if (i % 2 == 0) {
+        num += i
+    }
+}
+println(num)
+
+// when 1부터 100까지의 짝수의 합 출력
+var n = 0
+for(i in 1..100) {
+    when {
+        i % 2 == 0 -> n += i
+    }
+}
+println(n)
+
+// 별찍기
+var n: Int = 3
+
+for(i in 1..n) {
+    if(i % 2 == 1) {
+        println("*".repeat(i))
+    }
+    n--
+}
